@@ -19,7 +19,7 @@ function PhotoPanel({ src, index, angle }: { src: string; index: number; angle: 
   texture.anisotropy = 8;
   const radius = 3.15;
   return (
-    <group position={[Math.sin(angle) * radius, 1.15 + (index % 2) * 0.12, -Math.cos(angle) * radius]} rotation={[0, angle, 0]}>
+    <group position={[Math.sin(angle) * radius, 1.15 + (index % 2) * 0.12, -Math.cos(angle) * radius]} rotation={[0, -angle, 0]}>
       <mesh position={[0, 0, -0.045]}>
         <planeGeometry args={[2.12, 1.25]} />
         <meshStandardMaterial color="#d6a75c" roughness={0.45} />
