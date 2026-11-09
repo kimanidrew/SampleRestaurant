@@ -1,12 +1,12 @@
 # JIKO — Kenyan Restaurant Experience
 
-A responsive Next.js App Router website for JIKO, featuring an interactive Three.js hero dish, procedural 3D dining-room tour, Kenyan menu with KES pricing, cart and WhatsApp ordering.
+A responsive Next.js App Router website for JIKO, featuring an immersive Three.js photo-wall hero built from the supplied restaurant walkthrough frames, a procedural 3D dining-room tour, Kenyan menu with KES pricing, cart and WhatsApp ordering.
 
 ## Asset inspection
 
 The supplied ZIP contains **160 JPEG files**, all in the archive root, totalling approximately **21.19 MB**. They are sequential 480×270 frames depicting the JIKO restaurant entrance, interior, dining and food scenes. No GLB/GLTF model, separate logo, menu document or equirectangular 360° panorama was present.
 
-The source imagery is documented under `public/assets/{images,tour,models}/`. The site currently uses lightweight 3D/CSS illustrations and a procedural room as fallbacks. The original 160 JPEG binaries have **not yet been copied into this repository**; add them to `public/assets/tour/` (or convert them to an optimized WebP sequence) to use the supplied footage in the live gallery/tour. The supplied files are all comfortably below Vercel's 100 MB per-file limit.
+The source imagery is documented under `public/assets/{images,tour,models}/`. The 3D homepage hero uses five representative frames from the supplied walkthrough as floating, curved photo panels. To keep the repository lean, the five selected JPEGs are imported locally from the original ZIP rather than checking in all 160 source frames.
 
 ## Local setup
 
