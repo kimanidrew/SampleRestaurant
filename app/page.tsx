@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {ArrowDown,ArrowUpRight,Clock,MapPin,Phone,Plus,Minus,ShoppingBag,X,Mail,Utensils} from "lucide-react";
 import menu from "@/data/menu.json";
 import {restaurant} from "@/lib/config";
-const FoodScene=dynamic(()=>import("@/components/FoodScene"),{ssr:false});
+const FoodScene=dynamic(()=>import("@/components/FoodScene"),{ssr:false,loading:()=> <div className="grid h-full place-items-center text-xs uppercase tracking-widest text-white/50">Preparing the JIKO experience…</div>});
 const TourScene=dynamic(()=>import("@/components/TourScene"),{ssr:false});
 type Item={id:string;name:string;category:string;description:string;price:number;tags:string[];ingredients:string[];spice:string;symbol:string};
 const items=menu as Item[]; const cats=["All","Breakfast","Mains","Street Food","Drinks","Desserts"];
